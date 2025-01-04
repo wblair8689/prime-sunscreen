@@ -40,6 +40,9 @@ jobs:
           api_location: ""
           output_location: "out"
           skip_app_build: true
+          deployment_environment: "production"
+          production_branch: "main"
+          is_static_export: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
